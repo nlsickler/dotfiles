@@ -1,3 +1,5 @@
-- clean: []
-- link: {}
-- shell: []
+- clean: ['~/AppData/Local/nvim']
+- link:
+    ~/AppData/Local/nvim: nvim/
+- shell: 
+  - [git submodule udpate --init --recursive, Installing submodules]
