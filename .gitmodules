@@ -2,3 +2,9 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:nlsickler/dotfiles-nvim.git
+[submodule "pwsh"]
+	path = pwsh
+	url = git@github.com:nlsickler/dotfiles-pwsh.git
