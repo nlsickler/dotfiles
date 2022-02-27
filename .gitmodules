@@ -5,8 +5,8 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:nlsickler/dotfiles-nvim.git
-        branch = main
+	branch = main
 [submodule "pwsh"]
 	path = pwsh
 	url = git@github.com:nlsickler/dotfiles-pwsh.git
-        branch = main
+	branch = main
