@@ -1,0 +1,17 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ["~", "~/AppData/Local"]
+
+- link:
+    ~/.test: README.md
+    ~/.config/nvim:
+      force: true
+      path: nvim/
+    /opt/microsoft/powershell/profile.ps1: pwsh/Microsoft.PowerShell_profile.ps1
+    /opt/microsoft/powershell/nlsicklerTheme.omp.json: pwsh/nlsicklerTheme.omp.json
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
