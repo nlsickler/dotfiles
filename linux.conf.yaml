@@ -6,7 +6,7 @@
 - clean: ["~", "~/AppData/Local"]
 
 - link:
-    ~/.test: README.md
+    ~/.vimrc: vimrc
     ~/.config/nvim:
       force: true
       path: nvim/
