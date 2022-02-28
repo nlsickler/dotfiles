@@ -1,0 +1,16 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.vimrc: vimrc
+    ~/.config/nvim:
+      force: true
+      path: nvim/
+    ~/.config/powershell: pwsh/
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
