@@ -8,7 +8,7 @@ if([environment]::OSVersion.ToString() -Match "Windows")
     if(!$CurrentWindowsPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator))
     {
       Write-Host "Running on Windows requires Administrator privileges"
-        return
+      return
     }
 }
 
