@@ -13,7 +13,9 @@
     ~/Documents/PowerShell:
       force: true
       path: pwsh/
-
+    ~/AppData/Roaming/alacritty:
+      force: true
+      path: configs/alacritty/
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

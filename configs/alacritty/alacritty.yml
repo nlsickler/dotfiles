@@ -1,0 +1,18 @@
+font:
+  normal:
+    family: LiterationMono NF
+    style: Book
+
+  bold:
+    family: LiterationMono NF
+    style: Bold
+
+  italic:
+    family: LiterationMono NF
+    style: Italic
+
+  bold_italic:
+    family: LiterationMono NF
+    style: Bold Italic
+
+  size: 11
