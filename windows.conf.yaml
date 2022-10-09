@@ -16,6 +16,9 @@
     ~/AppData/Roaming/alacritty:
       force: true
       path: configs/alacritty/
+    ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState:
+      force: false
+      path: configs/WindowsTerminal/
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
