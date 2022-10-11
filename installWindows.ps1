@@ -20,6 +20,19 @@ $DOTBOT_DIR = "dotbot"
 $DOTBOT_BIN = "bin/dotbot"
 $BASEDIR = $PSScriptRoot
 
+if ($env:Path -contains "nvim-utils")
+{
+    Write-Host "nvim-utils already in path"
+}
+else
+{
+    Write-Host "Adding nvim-utils to path"
+    $env:Path += ";C:\tools\nvim-utils"
+
+    [Environment]::SetEnvironmentVariable("Path", $env:Path, [System.EnvironmentVariableTarget]::User)
+    Write-Host $env:Path
+}
+
 Set-Location $BASEDIR
 git -C $DOTBOT_DIR submodule sync --quiet --recursive
 git submodule update --init --recursive $DOTBOT_DIR

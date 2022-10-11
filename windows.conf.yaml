@@ -17,8 +17,11 @@
       force: true
       path: configs/alacritty/
     ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState:
-      force: false
       path: configs/WindowsTerminal/
+    C:/tools/nvim-utils/currMedia.py:
+      path: nvim/currMedia.py
+    C:/tools/nvim-utils/Get-Current-Media.ps1:
+      path: nvim/Get-Current-Media.ps1
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
